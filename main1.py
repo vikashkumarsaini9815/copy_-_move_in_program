@@ -1,14 +1,14 @@
 import os, shutil, glob
 
 
-work_opetions = (input("what is work in program like copy and move file  :-  ", ))
-print(type(work_opetions))
-compresin1 = "copy"
-compresin2 = "move"
-compresin3 = ["copy","move"]
-if work_opetions in compresin3 :
+work_options = (input("what is work in program like copy and move file  :-  ", ))
+print(type(work_options))
+comparison1 = "copy"
+comparison2 = "move"
+comparison3 = ["copy","move"]
+if work_options in comparison3 :
 
-    if work_opetions == compresin1:
+    if work_options == comparison1:
         which_file = (input( "which file (like .pdf, .txt, .png, .mp4, .... )", ))
         path_dir = (input("insert path  : -   ", ))
         result = os.chdir(path_dir)
@@ -22,7 +22,7 @@ if work_opetions in compresin3 :
         for file1 in list_file:
             shutil.copy(file1, dst)
         print("done")
-    elif work_opetions == compresin2:
+    elif work_options == comparison2:
         which_file = (input( "which file (like .pdf, .txt, .png, .mp4, .... )", ))
         path_dir = (input("insert path  : -  ", ))
         result = os.chdir(path_dir)

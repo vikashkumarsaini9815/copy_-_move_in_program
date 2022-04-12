@@ -1,19 +1,19 @@
 import os, shutil
 from M_Copy import copyfunction, movefunction
 
-work_opetions = (input("what is work in program like copy and move file  :-  ", ))
-print(type(work_opetions))
-compresin1 = "copy"
-compresin2 = "move"
-compresin3 = ["copy","move"]
-if work_opetions in compresin3:
-    if work_opetions == compresin1:
+work_options = (input("what is work in program like copy and move file  :-  ", ))
+print(type(work_options))
+comparison1 = "copy"
+comparison2 = "move"
+comparison3 = ["copy","move"]
+if work_options in comparison3:
+    if work_options == comparison1:
         print("copy & move") 
         scr = (input("fill your file dir path :- ", ))
         dcr = (input("fill your file drop path  :- ", ))    
         copyfunction(scr, dcr)
         print("done copy")
-    elif work_opetions == compresin2:
+    elif work_options == comparison2:
         scr = (input("fill your file dir path :- ", ))
         dcr = (input("fill your file drop path  :- ", ))
         movefunction(scr,dcr)
